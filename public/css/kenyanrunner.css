@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* font-family: 'Lato', sans-serif; */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1rem;
+    background: url('../assets/runnerbluelight.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 0 5rem 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#back {
+    height: 2.2rem;
+}
+
+.back {
+    border: 1px solid darkgray;
+    height: inherit;
+    width: 3rem;
+    fill: rgba(0, 0, 0, 0.5);
+    background: white;
+    position: absolute;
+}
+
+.back:hover {
+    background: darkgray;
+    color: white;
+    transition: 300ms;
+}
+
+.back:active {
+    background: black;
+}
+
+.largeContainer {
+    width: 50%;
+    min-width: 350px;
+    margin-top: 5rem;
+    /* border: 1px solid red; */
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+#intro {
+    line-height: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    background: lightgray;
+    padding: 1rem;
+}
+
+.download {
+    margin: 1rem 0;
+    width: 6rem;
+    height: 3rem;
+    border: none;
+    color: white;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    background: rgb(85, 85, 85);
+    transition: 300ms;
+}
+
+.download:hover {
+    background: white;
+    cursor: pointer;
+    color: black;
+}
+
+.download:active {
+    background-color: black;
+    color: white;
+}
+
+.screenshots {
+    width: 65vw;
+    min-width: 350px;
+    aspect-ratio: 16/9;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+}
+
+.scroll {
+    margin: 1rem;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    z-index: 5;
+    border: none;
+    color: gray;
+    border: 1px solid darkgray;
+    border-radius: 50%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    transition: 300ms;
+    /* transform: translateY(20vh); */
+}
+
+.left {}
+
+.right {
+    right: 0;
+}
+
+.scroll:hover {
+    background: black;
+    cursor: pointer;
+}
+
+.scroll:active {
+    background-color: darkgray;
+    color: white;
+}
+
+li {
+    list-style: none;
+    width: inherit;
+    height: inherit;
+    transition: 300ms;
+}
+
+img {
+    width: inherit;
+    height: inherit;
+}
+
+@media(max-width:860px) {
+    .scroll {
+        /* transform: translateY(10vh); */
+    }
+    .screenshots {
+        width: 95vw;
+    }
+}

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* font-family: 'Montserrat', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* font-family: 'Lato', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+/* font-family: 'Mukta', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+/* font-family: 'Luckiest Guy', cursive; */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.largeContainer {
+    background: url('/assets/cover.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo {
+    width: 3rem;
+    height: auto;
+    background: none;
+    margin-left: 4rem;
+}
+
+#top-p {
+    color: black;
+    font-weight: 900;
+    font-size: 2rem;
+    font-family: 'Luckiest Guy', cursive;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    background-image: url("https://pbs.twimg.com/profile_images/1465129941629087749/gHN1ESSE_400x400.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.topnav-ul {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 4rem;
+}
+
+.topnav-ul li {
+    list-style: none;
+    color: white;
+    font-family: 'Mukta', sans-serif;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.topnav-ul li:hover {
+    cursor: pointer;
+    background: rgba(80, 80, 80, 0.6);
+    transition: 500ms;
+}
+
+.topnav-ul li:active {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.8);
+    transition: 500ms;
+}
+
+.bottom {
+    padding: 1rem;
+    padding: 4vh 3rem 3rem 3rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.gameCard {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    min-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 1;
+    border: 1px solid rgb(82, 82, 82);
+    transition: 300ms;
+}
+
+.gameCard:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: 5px -6px 24px -10px rgba(255, 255, 255, 0.7);
+    -webkit-box-shadow: 5px -6px 24px -10px rgba(255, 255, 255, 0.7);
+    -moz-box-shadow: 5px -6px 24px -10px rgba(255, 255, 255, 0.7);
+}
+
+.gameCard-top {
+    width: 100%;
+}
+
+.gameCard-bottom {
+    padding: 1rem;
+}
+
+#gameCard-img {
+    width: inherit;
+    border-radius: 10px 10px 0 0;
+    height: 30vh;
+}
+
+.gameCard-bottom p {
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.p1 {
+    color: rgb(216, 216, 216);
+    border-bottom: 1px solid gray;
+}
+
+.p2 {
+    color: rgb(216, 216, 216);
+}
+
+.p3 {
+    color: rgb(216, 216, 216);
+}
+
+p a {
+    color: wheat;
+}
+
+.bottomContainer {
+    background: gray;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    gap: 1rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+}
+
+.bottomContainer div {
+    width: auto;
+    text-decoration: underline;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 300ms;
+}
+
+.bottomContainer div:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.bottomContainer div:active {
+    background: lightgreen;
+}
+
+.bottomContainer p,
+.bottomContainer a div,
+.bottomContainer div,
+.bottomContainer input {
+    /* color: white; */
+    font-size: 0.8rem;
+}
+
+.WAlink {
+    color: darkgreen;
+}
+
+.bottomContainer img {
+    fill: green;
+}
+
+#input {
+    border: none;
+    outline: none;
+    background: inherit;
+}
